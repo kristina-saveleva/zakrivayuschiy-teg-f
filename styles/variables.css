@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-family-Inter: "Inter-Variable", sans-serif;
+  --font-weight-text: 400;
+  --font-weight-light-bold: 700;
+  --font-weight-dark-bold: 800;
+  --font-family-PressStart2P: "PressStart2P", fantasy;
+  --background-color: 255, 255, 255;
+  --accent-color: 0, 0, 0;
+  --font-weight-title: 700;
+  --contour-color: rgb(0, 0, 0);
+  --fill-color: rgb(255, 0, 0);
+  --opposite-color-mode: 255, 255, 255;
+  --background-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    linear-gradient(180deg, rgb(231, 231, 231) 0.01%, rgb(26, 26, 26) 100%);
+}
