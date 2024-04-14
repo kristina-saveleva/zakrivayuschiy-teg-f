@@ -7,7 +7,9 @@
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.svg" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
@@ -17,8 +19,8 @@
   <body class="page">
     <header class="header content-width">
       <div class="header__logo-container">
-        <h1 class="header__logo">&lt;/HTML&gt;</h1>
-        <p class="header__logo-subtitle">закрывающий тег</p>
+        <a class="header__logo">&lt;/HTML&gt;</a>
+        <h1 class="header__logo-subtitle">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -48,9 +50,6 @@
     </header>
     <main>
       <section class="content">
-        <h2 class="visually-hidden">
-          Краткая история знаний ученика Яндекс Практикума
-        </h2>
         <article class="content-width">
           <h2 class="content__title">
             Фритрек и нулевой спринт: Подготовка к работе
@@ -61,7 +60,7 @@
               src="./images/content-image.png"
               alt="Трейлер в лесу"
             />
-            <h2 class="content__label">&lt;/HTML&gt;</h2>
+            <span class="content__label">&lt;/HTML&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -120,9 +119,9 @@
             <img
               class="content__image content__image-contrast"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с контрастным фильтром"
             />
-            <h2 class="content__label">&lt;/HTML&gt;</h2>
+            <span class="content__label">&lt;/HTML&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -183,9 +182,9 @@
             <img
               class="content__image content__image-sepia"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фильтром сепия"
             />
-            <h2 class="content__label">&lt;CSS&gt;</h2>
+            <span class="content__label">&lt;CSS&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -244,9 +243,9 @@
             <img
               class="content__image content__image-brightness"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фильтром яркости"
             />
-            <h2 class="content__label">&lt;desigions&gt;</h2>
+            <span class="content__label">&lt;desigions&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -307,9 +306,9 @@
             <img
               class="content__image content__image-hue-rotate"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фильтром поворота оттенка"
             />
-            <h2 class="content__label">care</h2>
+            <span class="content__label">care</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -371,9 +370,9 @@
             <img
               class="content__image content__image-invert"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фильтром инвертируемости цветов"
             />
-            <h2 class="content__label">&lt;support&gt;</h2>
+            <span class="content__label">&lt;support&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -432,9 +431,9 @@
             <img
               class="content__image content__image-blur"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фильтром блюра"
             />
-            <h2 class="content__label">&lt;lifes-style: none;&gt;</h2>
+            <span class="content__label">&lt;lifes-style: none;&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -449,7 +448,7 @@
             </p>
           </div>
           <div class="content__buttons-container">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 width="39.000000"
@@ -495,9 +494,9 @@
             <img
               class="content__image content__image-opacity"
               src="./images/content-image.png"
-              alt="Трейлер в лесу"
+              alt="Трейлер в лесу с фиотром прозрачности"
             />
-            <h2 class="content__label">&lt;experience&gt;</h2>
+            <span class="content__label">&lt;experience&gt;</span>
           </div>
           <div class="content__container">
             <p class="content__paragraph">
@@ -555,46 +554,48 @@
           </div>
         </article>
       </section>
-    </main>
-    <footer class="footer">
-      <button
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
-        class="button card__save-button"
-      >
-        <svg
-          fill="black"
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
+      <div class="modal-box">
+        <button
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+          aria-controls="dialog-id"
+          class="button card__save-button"
         >
-          <use fill="black" href="#save-icon"></use>
-        </svg>
-        <span class="button__text button__text-save">Сохранить на память</span>
-      </button>
-      <dialog class="dialog" id="dialog-id">
-        <div class="dialog__container">
           <svg
             fill="black"
-            class="icon dialog__icon"
+            class="icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 39 39"
           >
             <use fill="black" href="#save-icon"></use>
           </svg>
-          <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
-        </div>
-
-        <button
-          type="button"
-          class="button dialog-button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="dialog-button-text">ок</span>
+          <span class="button__text button__text-save"
+            >Сохранить на память</span
+          >
         </button>
-      </dialog>
-    </footer>
+        <dialog class="dialog" id="dialog-id">
+          <div class="dialog__container">
+            <svg
+              fill="black"
+              class="icon dialog__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39 39"
+            >
+              <use fill="black" href="#save-icon"></use>
+            </svg>
+            <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
+          </div>
+
+          <button
+            type="button"
+            class="button dialog-button"
+            onclick="window['dialog-id'].close()"
+          >
+            <span class="dialog-button-text">ок</span>
+          </button>
+        </dialog>
+      </div>
+    </main>
     <svg
       fill="black"
       style="display: none"
